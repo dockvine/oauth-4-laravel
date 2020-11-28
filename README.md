@@ -3,6 +3,8 @@
 oauth-4-laravel is a simple laravel 4 service provider (wrapper) for [Lusitanian/PHPoAuthLib](https://github.com/Lusitanian/PHPoAuthLib) 
 which provides oAuth support in PHP 5.3+ and is very easy to integrate with any project which requires an oAuth client.
 
+Note from Sid - There is a bug in the original repo -- key and state_key attributes were not getting passed to the OAuth::consumer function. These attributes are required by the Redis class for storing tokens. I forked the original repo and created this branch 'dockvine-stable' with the bug fix. Using this branch will also ensure stability rather than being dependent on the original author's repo.
+
 ---
  
 - [Supported services](#supported-services)
